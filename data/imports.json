@@ -1,0 +1,32 @@
+{
+
+	"scripts" :[
+		"src/framework/Simplrz.js",
+		
+		"src/main.js",
+		"shared/Data.js",
+
+		"src/framework/Events.js",
+		"src/framework/Application.js",
+
+		"src/framework/domExtend/DomExtend.js",
+		"src/framework/domExtend/State.js",
+		"src/framework/domExtend/Transform.js",
+		"src/framework/domExtend/Transition.js",
+
+		"src/framework/FrameImpulse.js",
+		"src/framework/HistoryRouter.js",
+		"src/framework/Loader.js",
+		"src/framework/MSG.js",
+		"src/framework/VirtualScroll.js",
+		"src/framework/Pointer.js",
+		"src/framework/Util.js",
+
+		"src/site/util/Easer.js",
+		"src/site/util/Threshold.js",
+		"src/site/util/Timing.js"
+	],
+
+	"compressed": "site.min.js"
+
+}

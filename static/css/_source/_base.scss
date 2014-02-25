@@ -1,0 +1,58 @@
+html,
+body
+{
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	background: black;
+	// overflow-x: hidden;
+}
+
+// apply a natural box layout model to all elements
+*,
+*:before,
+*:after
+{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+::-moz-selection { background: rgba(0, 0, 0, 0.5); text-shadow: none; }
+::selection { background: rgba(0, 0, 0, 0.5); text-shadow: none; }
+
+html,
+button,
+input,
+select,
+textarea
+{
+	color: #222;
+}
+
+html
+{
+	// ( 16 being the default font size for most browsers - I drop it down to 10 )
+	font-size: 62.5%;
+	-webkit-font-smoothing: antialiased;
+}
+
+img
+{
+	vertical-align: middle;
+	max-width: 100%;
+	position: relative;
+	display: block;
+}
+
+fieldset
+{
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+
+textarea
+{
+	resize: vertical;
+}
