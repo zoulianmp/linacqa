@@ -8,5 +8,8 @@
       "hbs": "*",
       "strftime": "*",
       "node-sass": "*"
+   },
+   "engines": {
+      "node": "0.10.26"
    }
 }
