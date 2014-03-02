@@ -42,12 +42,11 @@ app.configure('development', function(){
 
 // production only
 app.configure('production', function(){
-	// app.use(express.compress());
+	app.use(express.compress());
 });
 
 app.set('view engine', 'html');
 app.engine('html', hbs.__express);
-app.use(express.compress());
 app.use(express.static('static'));
 
 
