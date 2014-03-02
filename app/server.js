@@ -19,13 +19,14 @@ var context = {
 		dev: defaultToDev,
 		cdn: 'http://cdn.linacqa.com'
 	},
-	layout: "",
+	layout: "layouts/main",
 	imports: require('../data/imports.json')
 };
 
 var app = express();
 var sass = require('node-sass');
 
+// ---
 // express config
 app.configure('development', function(){
 	app.use(
@@ -50,13 +51,25 @@ app.use(express.compress());
 app.use(express.static('static'));
 
 
+// ---
+// Parse Query
+var parseQuery = function(request, response) {
+	// parse query and manipulate { context } here
+}
+
 
 // ---
 // routes
 app.get('/', function(request, response) {
+	parseQuery(request, response);
 	response.render('index', context);
 });
 
-// start me up
+app.get('/about', function(request, response) {
+	parseQuery(request, response);
+	response.render('about', context);
+});
+
+// start app
 app.listen(port);
 console.log("Server started on port " + port);
