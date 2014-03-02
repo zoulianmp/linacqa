@@ -4,7 +4,6 @@
 		"src/framework/Simplrz.js",
 		
 		"src/main.js",
-		"shared/Data.js",
 
 		"src/framework/Events.js",
 		"src/framework/Application.js",
@@ -20,13 +19,9 @@
 		"src/framework/MSG.js",
 		"src/framework/VirtualScroll.js",
 		"src/framework/Pointer.js",
-		"src/framework/Util.js",
-
-		"src/site/util/Easer.js",
-		"src/site/util/Threshold.js",
-		"src/site/util/Timing.js"
+		"src/framework/Util.js"
 	],
 
-	"compressed": "site.min.js"
+	"compressed": "/js/site.min.js"
 
 }

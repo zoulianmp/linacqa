@@ -2,7 +2,7 @@
 
 	baseUrl: "static/src/", 
 
-	out: "static/site.min.js", 
+	out: "static/js/site.min.js", 
 
 	name: "main", 
 
@@ -11,8 +11,6 @@
 	skipModuleInsertion: true,
 
 	include: [		
-		"../../app/shared/Data",
-
 		"framework/Simplrz",
 		"framework/Events",
 		"framework/Application",
@@ -28,10 +26,6 @@
 		"framework/MSG",
 		"framework/VirtualScroll",
 		"framework/Pointer",
-		"framework/Util",
-
-		"site/util/Easer",
-		"site/util/Threshold",
-		"site/util/Timing"
+		"framework/Util"
 	]
 })
