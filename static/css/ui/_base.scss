@@ -1,0 +1,32 @@
+/*------------------------------------*\
+    BASE
+\*------------------------------------*/
+
+// There should only be 1 wrapper element.
+// It acts as a second 'body' tag and provides
+// a bit more flexbility on top of container elements
+// 1. Offset from the body just a tad
+// 2. Background color to offset from body
+.wrapper
+{
+	margin: 0;
+	padding: $base-spacing-unit;
+	background-color: $wrapper-background;
+}
+
+// This is to be used repeatedly to center
+// items in the viewport. Also wraps items in
+// a wrapper and keeps them 'contained'...
+// 1. maxium width of this element
+// 2. center item in the viewport
+.contain
+{
+	max-width: $max-width; /* 1 */
+	margin: 0 auto; /* 2 */
+}
+
+// Body styles
+body
+{
+	background-color: $body-background;
+}

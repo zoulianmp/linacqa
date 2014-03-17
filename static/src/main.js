@@ -6,7 +6,7 @@ window.addEventListener('load', function() {
 	// 	return;
 	// }
 
-	console.log('ready');
+	// console.log('ready');
 
 	// Site(rawData);
 

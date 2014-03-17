@@ -1,0 +1,28 @@
+<!-- views/signup.ejs -->
+
+<div class="contain">
+
+	<h1>Signup</h1>
+
+	<!-- show any messages that come back with authentication -->
+	{{#if config.message}}
+	<div class="alert alert-danger">{{ config.message }}</div>
+	{{/if}}
+
+	<!-- LOGIN FORM -->
+	<form action="/signup" method="post">
+
+		<label>Email</label>
+		<input type="text" class="form-control" name="email">
+		<label>Password</label>
+		<input type="password" class="form-control" name="password">
+			<button type="submit" class="btn btn-warning btn-lg">Signup</button>
+			
+	</form>
+
+	<hr>
+
+	<p>Already have an account? <a href="/login">Login</a></p>
+	<p>Or go <a href="/">home</a>.</p>
+
+</div>

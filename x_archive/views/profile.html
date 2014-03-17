@@ -1,0 +1,25 @@
+<!-- views/profile.ejs -->
+
+<div class="contain">
+	<div class="page-header text-center">
+		<h1><span class="fa fa-anchor"></span> Profile Page</h1>
+		<a href="/logout" class="btn btn-default btn-sm">Logout</a>
+	</div>
+
+	<div class="grid grid--center">
+
+		<!-- LOCAL INFORMATION -->
+		<div class="grid__item six-tenths">
+			<div class="island">
+				
+				<h3>Local</h3>
+
+					<p><strong>id</strong>: {{ user._id }}</p>
+					<p><strong>email</strong>: {{ user.local.email }}</p>
+					<p><strong>password</strong>: {{ user.local.password }}</p>
+
+			</div>
+		</div>
+
+	</div>
+</div>

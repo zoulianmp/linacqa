@@ -1,7 +1,6 @@
 <!--[if gte IE 9]><!DOCTYPE html><![endif]-->
 <!--[if !IE]> --><!DOCTYPE html><!-- <![endif]-->
 
-
 {{#if config.javascriptEnabled}}
 <html>
 {{else}}
@@ -13,37 +12,50 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
+	<!-- Local styles -->
 	<link href="/css/style.css" media="screen, projection" rel="stylesheet" type="text/css" />
 
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css"> <!-- load fontawesome -->
+
 	<base href="/">
-
-	<!-- {{#if config.javascriptEnabled}}
-	<script type="text/javascript">
-		var rawData = {{{dataJson}}};
-	</script>
-
-	<noscript>
-		<meta http-equiv="Refresh" content="0;URL={{config.path}}?ns" />
-	</noscript>
-	{{else}}
-	{{/if}} -->
 
 </head>
 <body>
 
-	<header class="main">
-		
-		<ul class="nav nav--block  greybox">
-			<li><a href="/">Home</a></li>
-			<li><a href="/about">About</a></li>
-		</ul>
-
-	</header>
-
 	<!-- Content here -->
 	<div class="wrapper">
+
+		<header class="main">
+			
+			<div class="contain">
+				<ul class="nav">
+					<li><a href="/">Home</a></li>
+					<li><a href="/login">Login</a></li>
+					{{#if user}}
+						<li><a href="/profile">Profile</a></li>
+					{{/if}}
+				</ul>
+			</div>
+
+		</header>
 	
 		{{{ body }}}
+
+		<footer class="milli">
+
+			<br />
+
+			<div class="contain">
+			
+				<hr />
+
+				<ul class="nav">
+					<li><a href="/">Home</a></li>
+				</ul>
+
+			</div>
+
+		</footer>
 
 	</div>
 
@@ -55,14 +67,6 @@
 		<script type="text/javascript" src="{{imports.compressed}}"></script>
 		{{/if}}
 	{{/if}}
-
-	<!-- {{#if config.dev}}
-	<script type="text/javascript">
-		if(location.host.indexOf("localhost") > -1 || location.host.indexOf("localhost") > -1) {
-			document.write('<script src=\"http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1\"></' + 'script>');
-		}
-	</script>
-	{{/if}} -->
 
 
 </body>
