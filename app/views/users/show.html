@@ -1,0 +1,16 @@
+<!-- views/index.ejs -->
+
+<div class="contain">
+
+	<h1>Profile</h1>
+
+	{{#if user}}
+		<p>
+			Name: <b>{{ user.name }}</b><br />
+			Userame: <b>{{ user.username }}</b><br />
+			Email: <b>{{ user.email }}</b><br />
+		</p>
+	{{/if}}
+
+
+</div>

@@ -1,0 +1,46 @@
+<!-- views/index.ejs -->
+
+<div class="contain">
+
+	<div>
+		<h1>Sign Up</h1>
+		  <p>Aenean lacinia bibendum nulla sed consectetur. Sed posuere consectetur est at lobortis. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Sed posuere consectetur est at lobortis. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
+	</div>
+
+	<div class="message">
+		{{ error }}
+	</div>
+
+	<form action="/users" method="post" role="form">
+		
+		<input type="hidden" name="_csrf" value="#{csrf_token}" />
+
+		<div class="form-group">
+			<label for="name">Full Name</label>
+			<input type="text" placeholder="Full Name" name="name" id="name" value="{{ user.name }}" />
+		</div>
+
+		<div class="form-group">
+			<label for="email">Email</label>
+			<input type="email" placeholder="Email" name="email" id="email" value="{{ user.email }}" />
+		</div>
+
+		<div class="form-group">
+			<label for="username">Username</label>
+			<input type="text" placeholder="Username" name="username" id="username"  value="{{ user.username }}" />
+		</div>
+
+		<div class="form-group">
+			<label for="password">Password</label>
+			<input type="password" placeholder="Username" name="password" id="password" />
+		</div>
+
+		<div class="form-group">
+			<button type="submit" class="btn">Sign Up</button>
+		</div>
+
+	</form>
+
+	<p>Already Registered? <a href="/login" class="btn btn--small">Log In</a></p>
+
+</div>

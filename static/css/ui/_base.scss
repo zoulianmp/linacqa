@@ -29,4 +29,16 @@
 body
 {
 	background-color: $body-background;
+	color: $base-color;
+}
+
+h1, h2, h3, h4, h5, h6
+{
+	color: $primary-color;
+}
+
+p
+{
+	margin: $base-spacing-unit 0;
+	max-width: 38em;
 }

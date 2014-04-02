@@ -8,14 +8,13 @@
 {{/if}}
 
 <head>
-	<title>LinacQA</title>
+	
+	<title>LinacQA {{#if title}} | {{ title }} {{/if}}</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
 	<!-- Local styles -->
 	<link href="/css/style.css" media="screen, projection" rel="stylesheet" type="text/css" />
-
-	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css"> <!-- load fontawesome -->
 
 	<base href="/">
 
@@ -28,29 +27,37 @@
 		<header class="main">
 			
 			<div class="contain">
+
 				<ul class="nav">
 					<li><a href="/">Home</a></li>
+					<li>/</li>
+					<li><a href="/about">About</a></li>
+					<li>/</li>
+					<li><a href="/signup">Sign Up</a></li>
+					<li>/</li>
 					<li><a href="/login">Login</a></li>
-					{{#if user}}
-						<li><a href="/profile">Profile</a></li>
-					{{/if}}
 				</ul>
+
+				<br />
+				<hr />
+
 			</div>
 
 		</header>
 	
 		{{{ body }}}
 
-		<footer class="milli">
-
-			<br />
+		<footer>
 
 			<div class="contain">
-			
+				
+				<br />
 				<hr />
 
 				<ul class="nav">
 					<li><a href="/">Home</a></li>
+					<li>/</li>
+					<li><a href="/about">About</a></li>
 				</ul>
 
 			</div>
